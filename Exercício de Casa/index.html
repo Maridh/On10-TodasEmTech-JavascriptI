@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="news">
+            <h1 class="news_title" id="formTitle">Booklist</h1>
+            <form action="" class="news__form" onsubmit="exibirDados(event)">
+                <div class="news_form-group">
+                    <label for="autor" class="news__label">Autor*</label>
+                    <input type="text" class="news__input" id="author" placeholder="Insira o nome do autor aqui">
+                    <label for="titulo" class="news__label">Título*</label>
+                    <input type="text" class="news__input" id="titulo" placeholder="Insira o título aqui">
+                    <label for="isbn" class="news__label">ISBN*</label>
+                    <input type="text" class="news__input" id="isbn" placeholder="Insira o ISBN aqui">
+                    <label for="data-publicacao" class="news__label">Data de Publicação*</label>
+                    <input type="date" class="news__input" id="dataPublicacao">
+                </div>
+                <div class="news__form-group">
+                    <input type="submit" class="button news__button" name="enviar" id="botaoDeEnviar" value="Enviar">
+                </div>
+                <div id="resposta" class="resposta__box resposta__list">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
