@@ -9,30 +9,32 @@ function exibirDados(event) {
     let dataInsercao = new Date().toLocaleDateString('pt-br');
     let horarioInsercao = new Date().toLocaleTimeString('pt-br');
 
-    if (pegaAutor === "") {
-        alert("Digite o nome do Autor.")
-    } else if (pegaTitulo === "") {
-        alert("Digite o nome do Título.")
-    } else if (pegaISBN === "") {
-        alert("Digite o ISBN.")
-    } else if (pegaDataPublicacao) {
-        alert("Digite a Data de Publicação.")
-    } else {
+    if(pegaAutor === "") {
+        alert('Digite o nome do Autor.')
+    } else if(pegaTitulo === "") {
+        alert('Digite o Título.')
+    }else if(pegaISBN === ""){
+        alert('Digite o ISBN.')
+    }else if(pegaDataPublicacao === ""){
+        alert('Digite a Data de Publicação.')
+    } else{
 
+ 
     document.getElementById('resposta').innerHTML += `
         <ul>
             <li>
                 <strong>Autor: </strong> ${pegaAutor}, <strong>Título: </strong> ${pegaTitulo},
                 <strong>ISBN: </strong> ${pegaISBN}, <strong>Data de Publicação</strong> ${pegaDataPublicacao},
                 <strong>Data de Ingresso no sistema</strong> ${dataInsercao}, ${horarioInsercao}
-                <a href="#" class="delete"</a>
+                <a href="#" class="delete">Deletar Publicação</a>
             </li>
         </ul>
 `
         
         limparDados();
     }
-}
+    }
+
 
 function limparDados() {
     document.getElementById('author').value = "";
@@ -42,7 +44,7 @@ function limparDados() {
 
 }
 
-document.getElementById('resposta').addEventListener('click', function (event) {
+document.getElementById('resposta').addEventListener('click', function(event) {
     if (event.target.className === "delete") {
         event.target.parentElement.remove();
 

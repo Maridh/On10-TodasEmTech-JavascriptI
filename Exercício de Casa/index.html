@@ -6,13 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
+
+    <link href=<link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="news">
-            <h1 class="news_title" id="formTitle">Booklist</h1>
+     <!-- cabeçalho -->
+            <div class="container">
+                <img class="icon" src="style/img/open-book (1).png" alt="icone livro"/>
+                <h1 class="news_title" id="formTitle"> My<span id="destaque">Audible</span>Books</h1>
+            </div>
             <form action="" class="news__form" onsubmit="exibirDados(event)">
                 <div class="news_form-group">
                     <label for="autor" class="news__label">Autor*</label>
@@ -25,10 +33,11 @@
                     <input type="date" class="news__input" id="dataPublicacao">
                 </div>
                 <div class="news__form-group">
-                    <input type="submit" class="button news__button" name="enviar" id="botaoDeEnviar" value="Enviar">
+                    <input type="submit" class="button__news__button" name="enviar" id="botaoDeEnviar" value="Adicionar Livro">
                 </div>
-                <div id="resposta" class="resposta__box resposta__list">
+                <div id="resposta" class="resposta__box__list">
                 </div>
+
             </form>
         </div>
     </div>

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* body */
+body {
+    background-color: lightgray;
+  }
+
+  .container{
+      display: flex;
+      padding-top:5px;
+      padding-bottom:25px;
+      justify-content: center;
+  }
+
+  .icon{
+      margin-right: 10px ;
+  }
+
+  #destaque {
+      color: aquamarine;
+  }
+
+  .news_form-group {
+      display: flex;
+     flex-direction: column;
+     margin-right: 10px;
+     margin-left: 10px;
+  }
+
+  .news__form-group{
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+  }
+
+  #botaoDeEnviar{
+      width: 98%;
+  }
