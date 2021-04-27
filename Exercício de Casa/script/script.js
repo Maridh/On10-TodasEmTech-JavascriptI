@@ -47,6 +47,10 @@ function limparDados() {
 document.getElementById('resposta').addEventListener('click', function(event) {
     if (event.target.className === "delete") {
         event.target.parentElement.remove();
-
+ 
     }
 })
+
+
+ 
+
