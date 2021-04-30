@@ -3,82 +3,121 @@
     margin: 0;
     text-decoration: none;
     color: inherit;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-  
 
-  /* body */
+/* body */
+
 body {
     background-color: lightgray;
 }
 
-  .container{
-      display: flex;
-      padding-top:5px;
-      padding-bottom:25px;
-      justify-content: center;
-  }
+.container {
+    display: flex;
+    padding-top: 0.3125rem;
+    padding-bottom: 1.5625rem;
+    justify-content: center;
+}
 
-  #formTitle{
-      font-family: 'Roboto', sans-serif;;
-  }
+#formTitle {
+    font-family: 'Roboto', sans-serif;
+}
 
-  .icon{
-      margin-right: 10px ;
-  }
+.icon {
+    margin-right: 0.625rem;
+}
 
-  #destaque {
-      color: #008cba;
-  }
+#destaque {
+    color: #008cba;
+}
 
-  .news_form-group {
-      display: flex;
-     flex-direction: column;
-     margin-right: 10px;
-     margin-left: 10px;
+.news_form-body {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+}
 
-  }
+.news__form-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+}
 
-  .news__form-group{
-      display: flex;
-      justify-content: center;
-      margin-top: 12px;
-  }
+#botaoDeEnviar {
+    width: 98%;
+    padding: 0.125rem;
+    font-size: 1rem;
+}
 
-  #botaoDeEnviar{
-      width: 98%;
-      padding: 2px;
-      font-size: 16px;
-      
-  }
-
-  input {
+input {
     width: 100%;
     height: 2rem;
     border: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     margin-top: 0.5rem;
-  }
+}
 
-label{
-    padding: 2px;
-    margin-top: 5px;
+label {
+    padding: 0.125rem;
+    margin-top: 0.3125rem;
 }
 
 .button__news__button {
-    background-color: #008cba; 
-    color:antiquewhite;  
+    background-color: #008cba;
+    color: antiquewhite;
 }
 
-.delete{
-    border-radius: 10px;
-    background-color:  #008cba;
-    padding: 5px;
-    color: honeydew;
-    margin-left: 20px;
+/* tabela */
+
+th, td {
+    padding-right: 3.9rem;
+    padding-left: 1.9rem;
+    word-wrap: break-word;
+    font-size: min(0.9rem, 1.7vw);
+    margin: 0.4rem;
 }
 
-#resposta{
-    margin-top: 20px;
+#tabela_resposta {
+    margin-top: 1.25rem;
+}
 
+.delete {
+    border-radius: 0.3125rem;
+    border: none;
+    background-color: #008cba;
+    color: antiquewhite;
+    font-weight: lighter;
+    padding: 0.2rem;
+}
+
+thead>tr:first-child>th {
+    border-bottom: solid 0.0625rem white;
+    padding: 0.625rem;
+}
+
+td {
+    border-bottom: solid 1px white;
+    padding: 0.625rem;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding-bottom: 2px;
+    }
+    th, td {
+        font-size: 0.5rem;
+        margin-right: 0rem;
+    }
+    #botaoDeEnviar {
+        width: 50%;
+        font-size: 0.875rem;
+    }
+    #tabela_resposta {
+        margin-top: 0rem;
+    }
+    .delete {
+        padding: 0.2rem;
+        font-size: 0.56rem;
+    }
 }
